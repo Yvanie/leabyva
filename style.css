@@ -1,0 +1,136 @@
+:root {
+    --blue: #29abe2;
+    --pink: #f1479e;
+    --bg-light: #fdfdfd;
+    --text-main: #2d3436;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    background-image: radial-gradient(#e1e1e1 0.5px, transparent 0.5px);
+    background-size: 30px 30px; /* Petit motif tech discret */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-main);
+}
+
+.container {
+    width: 95%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+.text-pink { color: var(--pink); }
+
+/* Compte à rebours */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.time-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    min-width: 80px;
+    border: 1px solid #eee;
+}
+
+.time-box span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--pink);
+}
+
+.time-box small {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+/* Formulaire */
+.contact-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="email"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type="email"]:focus { border-color: var(--blue); }
+
+button {
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: var(--pink); }
+
+/* WhatsApp */
+.whatsapp-section {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.btn-wa {
+    text-decoration: none;
+    color: #25D366;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: 2px solid #25D366;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-wa:hover {
+    background: #25D366;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .contact-form { flex-direction: column; }
+    h1 { font-size: 1.6rem; }
+    .countdown { gap: 8px; }
+    .time-box { min-width: 65px; }
+}
