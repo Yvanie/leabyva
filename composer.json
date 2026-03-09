@@ -1,0 +1,19 @@
+{
+    "name": "yvanie/leabyva",
+    "description": "Leabyva Digital Works - Premium Website",
+    "type": "project",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "authors": [
+        {
+            "name": "Leabyva",
+            "email": "hello@leabyva.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
